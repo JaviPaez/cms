@@ -20,11 +20,11 @@ include('inc/header.php');
 	<div id="blog" class="row">
 		<div id="blog" class="row">
 			<div class="header">
-				<a href="#default" class="logo">My DEMO CMS</a>
+				<a href="#default" class="logo">Mi Blog de prueba</a>
 				<div class="header-right">
-					<a href="index.php">Home</a>
-					<a href="#contact">Contact</a>
-					<a href="#about">About</a>
+					<a href="index.php">Inicio</a>
+					<a href="#contact">Contacto</a>
+					<a href="#about">Acerca de</a>
 				</div>
 			</div>
 			<?php
