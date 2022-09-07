@@ -32,7 +32,7 @@ include('inc/header.php');
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10">
-					<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+					<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Panel de administración <small>Gestor de Datos</small></h1>
 				</div>
 				<br>
 			</div>
