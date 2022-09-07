@@ -13,14 +13,14 @@ $result = $article->getArticles();
 include('inc/header.php');
 
 ?>
-<title>phpzag.com : Demo Build Content Management System with PHP & MySQL</title>
+<title>Sistema gestor de contenido con PHP y MySQL</title>
 <link href="css/style.css" rel="stylesheet" id="bootstrap-css">
 <?php include('./inc/container.php'); ?>
 <div class="container">
 	<div id="blog" class="row">
 		<div id="blog" class="row">
 			<div class="header">
-				<a href="#default" class="logo">Mi Blog de prueba</a>
+				<a href="#default" class="logo">Mi Blog!</a>
 				<div class="header-right">
 					<a href="index.php">Inicio</a>
 					<a href="#contact">Contacto</a>
@@ -34,8 +34,8 @@ include('inc/header.php');
 			?>
 				<div class="col-md-10 blogShort">
 					<h2><?php echo $post['title']; ?></h2>
-					<em><strong>Published on</strong>: <?php echo date_format($date, "d F Y");	?></em>
-					<em><strong>Category:</strong> <a href="#" target="_blank"><?php echo $post['category']; ?></a></em>
+					<em><strong>Publicado el</strong>: <?php echo date_format($date, "d F Y");	?></em>
+					<em><strong>Categoría:</strong> <a href="#" target="_blank"><?php echo $post['category']; ?></a></em>
 					<br><br>
 					<article>
 						<p><?php echo $message; ?> </p>
