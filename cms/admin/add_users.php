@@ -80,19 +80,19 @@ include('inc/header.php');
 									<div id="login-alert" class="alert alert-success col-sm-12"><?php echo $saveMessage; ?></div>
 								<?php } ?>
 								<div class="form-group">
-									<label for="title" class="control-label">First Name</label>
-									<input type="text" class="form-control" id="first_name" name="first_name" value="" placeholder="First name...">
+									<label for="title" class="control-label">Nombre</label>
+									<input type="text" class="form-control" id="first_name" name="first_name" value="" placeholder="Nombre...">
 									<!-- value="<?php echo $userDetails['first_name']; ?>" 				 -->
 								</div>
 
 								<div class="form-group">
-									<label for="title" class="control-label">Last Name</label>
-									<input type="text" class="form-control" id="last_name" name="last_name" value="" placeholder="Last name...">
+									<label for="title" class="control-label">Apellido</label>
+									<input type="text" class="form-control" id="last_name" name="last_name" value="" placeholder="Apellido...">
 									<!-- value="<?php echo $userDetails['last_name']; ?>"  -->
 								</div>
 
 								<div class="form-group">
-									<label for="title" class="control-label">Email</label>
+									<label for="title" class="control-label">E-mail</label>
 									<input type="email" class="form-control" id="email" name="email" value="" placeholder="e-mail...">
 									<!-- value="<?php echo $userDetails['email']; ?>" -->
 								</div>
@@ -100,22 +100,22 @@ include('inc/header.php');
 								if (!$user->id) {
 								?>
 									<div class="form-group">
-										<label for="title" class="control-label">Password</label>
-										<input type="password" class="form-control" id="password" name="password" value="" placeholder="Password...">
+										<label for="title" class="control-label">Contraseña</label>
+										<input type="password" class="form-control" id="password" name="password" value="" placeholder="Contraseña...">
 										<!-- value="<?php echo $userDetails['password']; ?>"  -->
 									</div>
 								<?php } ?>
 
 								<div class="form-group">
-									<label for="status" class="control-label">User Type </label>
+									<label for="status" class="control-label">Tipo de usuario</label>
 									<label class="radio-inline">
-										<input type="radio" name="user_type" id="admin" value="1">Administrator
+										<input type="radio" name="user_type" id="admin" value="1">Administrador
 									</label>
 									<!-- <?php if ($userDetails['type'] == 1) {
 												echo "checked";
 											} ?> dps de value -->
 									<label class="radio-inline">
-										<input type="radio" name="user_type" id="author" value="2">Author
+										<input type="radio" name="user_type" id="author" value="2">Autor
 									</label>
 									<!-- <?php if ($userDetails['type'] == 2) {
 												echo "checked";
@@ -123,22 +123,22 @@ include('inc/header.php');
 								</div>
 
 								<div class="form-group">
-									<label for="status" class="control-label">User Status </label>
+									<label for="status" class="control-label">Estado</label>
 									<label class="radio-inline">
-										<input type="radio" name="user_status" id="active" value="0">Active
+										<input type="radio" name="user_status" id="active" value="0">Activo
 									</label>
 									<!-- <?php if (!$userDetails['deleted']) {
 												echo "checked";
 											} ?> -->
 									<label class="radio-inline">
-										<input type="radio" name="user_status" id="inactive" value="1">Inactive
+										<input type="radio" name="user_status" id="inactive" value="1">Inactivo
 									</label>
 									<!-- <?php if ($userDetails['deleted']) {
 												echo "checked";
 											} ?> -->
 								</div>
 
-								<input type="submit" name="saveUser" id="saveUser" class="btn btn-info" value="Save" />
+								<input type="submit" name="saveUser" id="saveUser" class="btn btn-info" value="Guardar" />
 							</form>
 						</div>
 					</div>
