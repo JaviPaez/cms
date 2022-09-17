@@ -46,7 +46,7 @@ include('inc/header.php');
 				<div class="col-md-9">
 					<div class="panel panel-default">
 						<div class="panel-heading" style="background-color:  #095f59;>
-						<h3 class=" panel-title">Categories</h3>
+						<h3 class=" panel-title">Categorías</h3>
 						</div>
 						<div class="panel-body">
 							<div class="panel-heading">
@@ -55,7 +55,7 @@ include('inc/header.php');
 										<h3 class="panel-title"></h3>
 									</div>
 									<div class="col-md-2" align="right">
-										<a href="add_categories.php" class="btn btn-default btn-xs">Add New</a>
+										<a href="add_categories.php" class="btn btn-default btn-xs">Nuevo</a>
 									</div>
 								</div>
 							</div>
@@ -63,7 +63,7 @@ include('inc/header.php');
 								<thead>
 									<tr>
 										<th>Id</th>
-										<th>Category</th>
+										<th>Categoría</th>
 										<th></th>
 										<th></th>
 									</tr>
