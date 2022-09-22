@@ -36,8 +36,8 @@ include('inc/header.php');
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Manage
               <span class="caret"></span></button>
             <ul class="dropdown-menu">
-              <li><a href="#">Add Post</a></li>
-              <li><a href="#">Add Category</a></li>
+              <li><a href="./add_post.php">Nueva Publicación</a></li>
+              <li><a href="./add_categories.php">Nueva Categoría</a></li>
             </ul>
           </div>
         </div>

@@ -56,17 +56,17 @@ include('inc/header.php');
 										<h3 class="panel-title"></h3>
 									</div>
 									<div class="col-md-2" align="right">
-										<a href="add_users.php" class="btn btn-default btn-xs">Add New</a>
+										<a href="add_users.php" class="btn btn-default btn-xs">Nuevo</a>
 									</div>
 								</div>
 							</div>
 							<table id="userList" class="table table-bordered table-striped">
 								<thead>
 									<tr>
-										<th>Name</th>
-										<th>Email</th>
-										<th>Type</th>
-										<th>Status</th>
+										<th>Nombre</th>
+										<th>E-mail</th>
+										<th>Tipo</th>
+										<th>Estado</th>
 										<th></th>
 										<th></th>
 									</tr>

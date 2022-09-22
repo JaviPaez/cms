@@ -4,9 +4,6 @@ include_once 'class/Articles.php';
 $database = new Database();
 $db = $database->getConnection();
 
-setlocale(LC_ALL, "es_ES@euro", "es_ES", "esp");
-
-
 $article = new Articles($db);
 
 $article->id = 0;

@@ -15,7 +15,7 @@
 			</ul>
 			<?php if (!empty($_SESSION["userid"])) { ?>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="index.html">Welcome, <?php echo $_SESSION["name"]; ?></a></li>
+					<li class="active"><a href="index.html">Bienvenido, <?php echo $_SESSION["name"]; ?></a></li>
 					<li><a href="logout.php">Logout</a></li>
 				</ul>
 			<?php } ?>
