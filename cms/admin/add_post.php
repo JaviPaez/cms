@@ -112,13 +112,13 @@ include('inc/header.php');
 								<div class="form-group">
 									<label for="status" class="control-label"></label>
 									<label class="radio-inline">
-										<input type="radio" name="status" id="publish" value="published" checked>Publicada
+										<input type="radio" name="status" id="publish" value="publicada" checked>Publicada
 									</label>
 									<label class="radio-inline">
-										<input type="radio" name="status" id="draft" value="draft">Pendiente
+										<input type="radio" name="status" id="draft" value="pendiente">Pendiente
 									</label>
 									<label class="radio-inline">
-										<input type="radio" name="status" id="archived" value="archived">Archivada
+										<input type="radio" name="status" id="archived" value="archivada">Archivada
 									</label>
 								</div>
 								<input type="submit" name="savePost" id="savePost" class="btn btn-info" value="Guardar" />

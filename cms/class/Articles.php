@@ -21,7 +21,7 @@ class Articles {
 			FROM ".$this->postTable." p
 			LEFT JOIN ".$this->categoryTable." c ON c.id = p.category_id
 			LEFT JOIN ".$this->userTable." u ON u.id = p.userid
-			WHERE p.status ='published' $query ORDER BY p.id DESC";
+			WHERE p.status ='publicada' $query ORDER BY p.id DESC";
 			
 		$stmt = $this->conn->prepare($sqlQuery);		
 		$stmt->execute();
@@ -54,4 +54,3 @@ class Articles {
 		return $result->num_rows;	
 	}	
 }
-?>

@@ -112,17 +112,17 @@ include('inc/header.php');
 								<div class="form-group">
 									<label for="status" class="control-label"></label>
 									<label class="radio-inline">
-										<input type="radio" name="status" id="publish" value="published" <?php if ($postdetails['status'] == 'published') {
+										<input type="radio" name="status" id="publish" value="publicada" <?php if ($postdetails['status'] == 'publicada') {
 																												echo "checked";
 																											} ?>>Publicada
 									</label>
 									<label class="radio-inline">
-										<input type="radio" name="status" id="draft" value="draft" <?php if ($postdetails['status'] == 'draft') {
-																										echo "checked";
-																									} ?>>Pendiente
+										<input type="radio" name="status" id="draft" value="pendiente" <?php if ($postdetails['status'] == 'pendiente') {
+																											echo "checked";
+																										} ?>>Pendiente
 									</label>
 									<label class="radio-inline">
-										<input type="radio" name="status" id="archived" value="archived" <?php if ($postdetails['status'] == 'archived') {
+										<input type="radio" name="status" id="archived" value="archivada" <?php if ($postdetails['status'] == 'archivada') {
 																												echo "checked";
 																											} ?>>Archivada
 									</label>

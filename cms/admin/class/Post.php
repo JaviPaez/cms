@@ -57,12 +57,12 @@ class Post
 		while ($post = $result->fetch_assoc()) {
 			$rows = array();
 			$status = '';
-			if ($post['status'] == 'published') {
-				$status = '<span class="label label-success">Published</span>';
-			} else if ($post['status'] == 'draft') {
-				$status = '<span class="label label-warning">Draft</span>';
-			} else if ($post['status'] == 'archived') {
-				$status = '<span class="label label-danger">Archived</span>';
+			if ($post['status'] == 'publicada') {
+				$status = '<span class="label label-success">Publicada</span>';
+			} else if ($post['status'] == 'pendiente') {
+				$status = '<span class="label label-warning">Pendiente</span>';
+			} else if ($post['status'] == 'archivada') {
+				$status = '<span class="label label-danger">Archivada</span>';
 			}
 
 			$rows[] = ucfirst($post['title']);
