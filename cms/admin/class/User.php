@@ -196,8 +196,12 @@ class User
 
 		if ($this->id) {
 
+			// DELETE FROM " . $this->userTable . " 				
+			// WHERE id = ?");
 			$stmt = $this->conn->prepare("
-				DELETE FROM " . $this->userTable . " 				
+				
+				UPDATE " . $this->userTable . " 
+				SET deleted = 1
 				WHERE id = ?");
 
 			$this->id = htmlspecialchars(strip_tags($this->id));
