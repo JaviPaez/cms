@@ -4,6 +4,9 @@ include_once 'class/Articles.php';
 $database = new Database();
 $db = $database->getConnection();
 
+setlocale(LC_ALL, "es_ES@euro", "es_ES", "esp");
+
+
 $article = new Articles($db);
 
 $article->id = 0;
@@ -35,7 +38,7 @@ include('inc/header.php');
 		?>
 			<div class="col-md-10 blogShort">
 				<h3><a href="view.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h3>
-				<em><strong>Publicado el</strong>: <?php echo date_format($date, "d F Y");	?></em>
+				<em><strong>Publicado el</strong>: <?php echo date_format($date, "l d F Y");	?></em>
 				<em><strong>Categoría:</strong> <a href="#" target="_blank"><?php echo $post['category']; ?></a></em>
 				<br><br>
 				<article>
