@@ -52,7 +52,7 @@ include('inc/header.php');
 										<h3 class="panel-title"></h3>
 									</div>
 									<div class="col-md-2" align="right">
-										<a href="compose_post.php" class="btn btn-default btn-xs">Add New</a>
+										<a href="add_post.php" class="btn btn-default btn-xs">Add New</a>
 									</div>
 								</div>
 							</div>
