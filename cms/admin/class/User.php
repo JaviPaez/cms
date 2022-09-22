@@ -155,11 +155,11 @@ class User
 			$this->first_name = htmlspecialchars(strip_tags($this->first_name));
 			$this->last_name = htmlspecialchars(strip_tags($this->last_name));
 			$this->email = htmlspecialchars(strip_tags($this->email));
-			$this->password = htmlspecialchars(strip_tags($this->password));
+			$this->password = htmlspecialchars(strip_tags(md5($this->password)));
 			$this->type = htmlspecialchars(strip_tags($this->type));
 			$this->deleted = htmlspecialchars(strip_tags($this->deleted));
 
-			$stmt->bind_param("ssssii", $this->first_name, $this->last_name, $this->email, md5($this->password), $this->type, $this->deleted);
+			$stmt->bind_param("ssssii", $this->first_name, $this->last_name, $this->email, $this->password, $this->type, $this->deleted);
 
 			if ($stmt->execute()) {
 				return $stmt->insert_id;
@@ -180,7 +180,6 @@ class User
 			$this->first_name = htmlspecialchars(strip_tags($this->first_name));
 			$this->last_name = htmlspecialchars(strip_tags($this->last_name));
 			$this->email = htmlspecialchars(strip_tags($this->email));
-			$this->password = htmlspecialchars(strip_tags($this->password));
 			$this->type = htmlspecialchars(strip_tags($this->type));
 			$this->deleted = htmlspecialchars(strip_tags($this->deleted));
 
