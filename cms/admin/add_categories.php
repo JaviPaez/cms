@@ -68,7 +68,7 @@ include('inc/header.php');
 				<div class="col-md-9">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">Agregar / Editar Categoría</h3>
+							<h3 class="panel-title">Nueva Categoría</h3>
 						</div>
 						<div class="panel-body">
 

@@ -31,7 +31,7 @@ if (!empty($_POST["savePost"]) && $_POST["title"] != '' && $_POST["message"] != 
 	if ($post->id) {
 		$post->updated = date('Y-m-d H:i:s');
 		if ($post->update()) {
-			$saveMessage = "Post updated successfully!";
+			$saveMessage = "Publicación actualizada exitosamente!";
 		}
 	} else {
 		$post->userid = $_SESSION["userid"];
@@ -40,7 +40,7 @@ if (!empty($_POST["savePost"]) && $_POST["title"] != '' && $_POST["message"] != 
 		$lastInserId = $post->insert();
 		if ($lastInserId) {
 			$post->id = $lastInserId;
-			$saveMessage = "Post saved successfully!";
+			$saveMessage = "Publicación guardada exitosamente!";
 		}
 	}
 }
@@ -62,7 +62,7 @@ include('inc/header.php');
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10">
-					<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+					<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Panel de administración <small>Gestor de Datos</small></h1>
 				</div>
 				<br>
 			</div>
@@ -76,7 +76,7 @@ include('inc/header.php');
 				<div class="col-md-9">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">Add New Post</h3>
+							<h3 class="panel-title">Nueva publicación</h3>
 						</div>
 						<div class="panel-body">
 
@@ -85,20 +85,18 @@ include('inc/header.php');
 									<div id="login-alert" class="alert alert-success col-sm-12"><?php echo $saveMessage; ?></div>
 								<?php } ?>
 								<div class="form-group">
-									<label for="title" class="control-label">Title</label>
-									<input type="text" class="form-control" id="title" name="title" value="" placeholder="Post title...">
-									<!-- value="<?php echo $postdetails['title']; ?>" 					 -->
+									<label for="title" class="control-label">Título</label>
+									<input type="text" class="form-control" id="title" name="title" value="" placeholder="Título...">
 								</div>
 
 								<div class="form-group">
-									<label for="lastname" class="control-label">Message</label>
-									<textarea class="form-control" rows="5" id="message" name="message" placeholder="Post message..."></textarea>
-									<!-- <?php echo $postdetails['message']; ?> -->
+									<label for="lastname" class="control-label">Mensaje</label>
+									<textarea class="form-control" rows="5" id="message" name="message" placeholder="Mensaje..."></textarea>
 								</div>
 
 
 								<div class="form-group">
-									<label for="sel1">Category</label>
+									<label for="sel1">Categoría</label>
 									<select class="form-control" id="category" name="category">
 										<?php
 										while ($category = $categories->fetch_assoc()) {
@@ -114,25 +112,16 @@ include('inc/header.php');
 								<div class="form-group">
 									<label for="status" class="control-label"></label>
 									<label class="radio-inline">
-										<input type="radio" name="status" id="publish" value="published" checked>Publish
+										<input type="radio" name="status" id="publish" value="published" checked>Publicada
 									</label>
-									<!-- <?php if ($postdetails['status'] == 'published') {
-												echo "checked";
-											} ?> -->
 									<label class="radio-inline">
-										<input type="radio" name="status" id="draft" value="draft">Draft
+										<input type="radio" name="status" id="draft" value="draft">Pendiente
 									</label>
-									<!-- <?php if ($postdetails['status'] == 'draft') {
-												echo "checked";
-											} ?> -->
 									<label class="radio-inline">
-										<input type="radio" name="status" id="archived" value="archived">Archive
+										<input type="radio" name="status" id="archived" value="archived">Archivada
 									</label>
-									<!-- <?php if ($postdetails['status'] == 'archived') {
-												echo "checked";
-											} ?> -->
 								</div>
-								<input type="submit" name="savePost" id="savePost" class="btn btn-info" value="Save" />
+								<input type="submit" name="savePost" id="savePost" class="btn btn-info" value="Guardar" />
 							</form>
 						</div>
 					</div>

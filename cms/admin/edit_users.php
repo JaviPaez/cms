@@ -28,14 +28,14 @@ if (!empty($_POST["saveUser"]) && $_POST["email"] != '') {
 	if ($user->id) {
 		$user->updated = date('Y-m-d H:i:s');
 		if ($user->update()) {
-			$saveMessage = "User updated successfully!";
+			$saveMessage = "Usuario actualizado exitosamente!";
 		}
 	} else {
 		$user->password = $_POST["password"];
 		$lastInserId = $user->insert();
 		if ($lastInserId) {
 			$user->id = $lastInserId;
-			$saveMessage = "User saved successfully!";
+			$saveMessage = "Usuario guardado exitosamente!";
 		}
 	}
 }
@@ -57,7 +57,7 @@ include('inc/header.php');
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10">
-					<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+					<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Panel de administración <small>Gestor de Datos</small></h1>
 				</div>
 				<br>
 			</div>
@@ -71,7 +71,7 @@ include('inc/header.php');
 				<div class="col-md-9">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">Add / Edit User</h3>
+							<h3 class="panel-title">Editar Usuario</h3>
 						</div>
 						<div class="panel-body">
 

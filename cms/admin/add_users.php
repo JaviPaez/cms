@@ -28,14 +28,14 @@ if (!empty($_POST["saveUser"]) && $_POST["email"] != '') {
 	if ($user->id) {
 		$user->updated = date('Y-m-d H:i:s');
 		if ($user->update()) {
-			$saveMessage = "User updated successfully!";
+			$saveMessage = "Usuario actualizado exitosamente!";
 		}
 	} else {
 		$user->password = $_POST["password"];
 		$lastInserId = $user->insert();
 		if ($lastInserId) {
 			$user->id = $lastInserId;
-			$saveMessage = "User saved successfully!";
+			$saveMessage = "Usuario guardado exitosamente!";
 		}
 	}
 }
@@ -57,7 +57,7 @@ include('inc/header.php');
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10">
-					<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Your Site</small></h1>
+					<h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Panel de administración <small>Gestor de Datos</small></h1>
 				</div>
 				<br>
 			</div>
@@ -71,7 +71,7 @@ include('inc/header.php');
 				<div class="col-md-9">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">Add / Edit User</h3>
+							<h3 class="panel-title">Nuevo Usuario</h3>
 						</div>
 						<div class="panel-body">
 
@@ -82,19 +82,16 @@ include('inc/header.php');
 								<div class="form-group">
 									<label for="title" class="control-label">Nombre</label>
 									<input type="text" class="form-control" id="first_name" name="first_name" value="" placeholder="Nombre...">
-									<!-- value="<?php echo $userDetails['first_name']; ?>" 				 -->
 								</div>
 
 								<div class="form-group">
 									<label for="title" class="control-label">Apellido</label>
 									<input type="text" class="form-control" id="last_name" name="last_name" value="" placeholder="Apellido...">
-									<!-- value="<?php echo $userDetails['last_name']; ?>"  -->
 								</div>
 
 								<div class="form-group">
 									<label for="title" class="control-label">E-mail</label>
 									<input type="email" class="form-control" id="email" name="email" value="" placeholder="e-mail...">
-									<!-- value="<?php echo $userDetails['email']; ?>" -->
 								</div>
 								<?php
 								if (!$user->id) {
@@ -102,7 +99,6 @@ include('inc/header.php');
 									<div class="form-group">
 										<label for="title" class="control-label">Contraseña</label>
 										<input type="password" class="form-control" id="password" name="password" value="" placeholder="Contraseña...">
-										<!-- value="<?php echo $userDetails['password']; ?>"  -->
 									</div>
 								<?php } ?>
 
@@ -111,15 +107,9 @@ include('inc/header.php');
 									<label class="radio-inline">
 										<input type="radio" name="user_type" id="admin" value="1">Administrador
 									</label>
-									<!-- <?php if ($userDetails['type'] == 1) {
-												echo "checked";
-											} ?> dps de value -->
 									<label class="radio-inline">
 										<input type="radio" name="user_type" id="author" value="2">Autor
 									</label>
-									<!-- <?php if ($userDetails['type'] == 2) {
-												echo "checked";
-											} ?> -->
 								</div>
 
 								<div class="form-group">
@@ -127,15 +117,9 @@ include('inc/header.php');
 									<label class="radio-inline">
 										<input type="radio" name="user_status" id="active" value="0">Activo
 									</label>
-									<!-- <?php if (!$userDetails['deleted']) {
-												echo "checked";
-											} ?> -->
 									<label class="radio-inline">
 										<input type="radio" name="user_status" id="inactive" value="1">Inactivo
 									</label>
-									<!-- <?php if ($userDetails['deleted']) {
-												echo "checked";
-											} ?> -->
 								</div>
 
 								<input type="submit" name="saveUser" id="saveUser" class="btn btn-info" value="Guardar" />
