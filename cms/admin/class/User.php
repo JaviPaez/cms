@@ -96,16 +96,16 @@ class User
 			$rows = array();
 			$status = '';
 			if ($user['deleted']) {
-				$status = '<span class="label label-danger">Inactive</span>';
+				$status = '<span class="label label-danger">Inactivo</span>';
 			} else {
-				$status = '<span class="label label-success">Active</span>';
+				$status = '<span class="label label-success">Activo</span>';
 			}
 
 			$type = '';
 			if ($user['type'] == 1) {
-				$type = '<span class="label label-danger">Admin</span>';
+				$type = '<span class="label label-info">Administrador</span>';
 			} else if ($user['type'] == 2) {
-				$type = '<span class="label label-warning">Author</span>';
+				$type = '<span class="label label-success">Autor</span>';
 			}
 
 			$rows[] = ucfirst($user['first_name']) . " " . $user['last_name'];
