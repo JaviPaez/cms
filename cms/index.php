@@ -4,6 +4,8 @@ include_once 'class/Articles.php';
 $database = new Database();
 $db = $database->getConnection();
 
+setlocale(LC_ALL, 'es');
+
 $article = new Articles($db);
 
 $article->id = 0;
@@ -29,13 +31,16 @@ include('inc/header.php');
 		</div>
 		<?php
 		while ($post = $result->fetch_assoc()) {
+
+
 			$date = date_create($post['created']);
+			$fecha = date_timestamp_get($date);
 			$message = str_replace("\n\r", "<br><br>", $post['message']);
 			$message = $article->formatMessage($message, 100);
 		?>
 			<div class="col-md-10 blogShort">
 				<h3><a href="view.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h3>
-				<em><strong>Publicado el</strong>: <?php echo date_format($date, "l d F Y");	?></em>
+				<em><strong>Publicado el</strong>: <?php echo strftime('%A %e de %B de %Y a las %H:%I', $fecha); ?></em>
 				<em><strong>Categoría:</strong> <a href="#" target="_blank"><?php echo $post['category']; ?></a></em>
 				<br><br>
 				<article>
