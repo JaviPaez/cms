@@ -40,7 +40,7 @@ include('inc/header.php');
 		?>
 			<div class="col-md-10 blogShort">
 				<h3><a href="view.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h3>
-				<em><strong>Publicado el</strong>: <?php echo strftime('%A %e de %B de %Y a las %H:%I', $fecha); ?></em>
+				<em><strong>Publicado el</strong>: <?php echo utf8_encode(ucfirst(strftime('%A %e de %B de %Y a las %H:%I', $fecha))); ?></em>
 				<em><strong>Categoría:</strong> <a href="#" target="_blank"><?php echo $post['category']; ?></a></em>
 				<br><br>
 				<article>
