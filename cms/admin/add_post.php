@@ -91,7 +91,8 @@ include('inc/header.php');
 
 								<div class="form-group">
 									<label for="lastname" class="control-label">Mensaje</label>
-									<textarea class="form-control" rows="5" id="message" name="message" placeholder="Mensaje..."></textarea>
+									<!-- <textarea class="form-control" rows="5" id="message" name="message" placeholder="Mensaje..."></textarea> -->
+									<textarea class="tinymce" rows="5" id="message" name="message" placeholder="Mensaje..."></textarea>
 								</div>
 
 
