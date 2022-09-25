@@ -4,8 +4,6 @@ include_once 'class/Articles.php';
 $database = new Database();
 $db = $database->getConnection();
 
-setlocale(LC_ALL, 'es');
-
 $article = new Articles($db);
 
 $article->id = (isset($_GET['id']) && $_GET['id']) ? $_GET['id'] : '0';
