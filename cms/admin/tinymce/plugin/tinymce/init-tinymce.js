@@ -4,13 +4,14 @@ tinymce.init({
     language: "es_MX",
 
     /* toolbar */
-    toolbar: "insertfile undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons | removeformat | code | help",
+    toolbar_mode: 'wrap',
+    toolbar: "insertfile undo redo | fontfamily fontsize styles | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media table | forecolor backcolor | print preview fullscreen |  charmap emoticons | removeformat | codesample code | help",
 
     /* statusbar */
     //statusbar: false,
 
     /* additional plugins */
-    plugins: ['lists', 'image', 'link', 'media', 'table', 'charmap', 'preview', 'searchreplace', 'code', 'wordcount', 'help'],
+    plugins: ['lists', 'link', 'image', 'media', 'table', 'charmap', 'emoticons', 'preview', 'fullscreen', 'searchreplace', 'code', 'codesample', 'wordcount', 'help'],
 
     /* Upgrade button */
     promotion: false,
