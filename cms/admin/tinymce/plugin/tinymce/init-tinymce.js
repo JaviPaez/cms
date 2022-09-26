@@ -2,6 +2,7 @@ tinymce.init({
     /* replace textarea having class .tinymce with tinymce editor */
     selector: "textarea.tinymce",
     language: "es_MX",
+    entity_encoding: "raw",
 
     /* toolbar */
     toolbar_mode: 'wrap',
