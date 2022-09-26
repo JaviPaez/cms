@@ -113,7 +113,7 @@ class Post
 				VALUES(?,?,?,?,?,?,?)");
 
 			$this->title = htmlspecialchars(strip_tags($this->title));
-			$this->message = htmlspecialchars(strip_tags($this->message));
+			$this->message = ($this->message);
 			$this->category = htmlspecialchars(strip_tags($this->category));
 			$this->userid = htmlspecialchars(strip_tags($this->userid));
 			$this->status = htmlspecialchars(strip_tags($this->status));
