@@ -37,7 +37,7 @@ CREATE TABLE `cms_posts` (
   `status` enum('publicada','pendiente','archivada','') NOT NULL DEFAULT 'publicada',
   `created` datetime NOT NULL,
   `updated` datetime NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `cms_posts`
