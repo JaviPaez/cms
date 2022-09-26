@@ -139,7 +139,7 @@ class Post
 
 			$this->id = htmlspecialchars(strip_tags($this->id));
 			$this->title = htmlspecialchars(strip_tags($this->title));
-			$this->message = htmlspecialchars(strip_tags($this->message));
+			$this->message = ($this->message);
 			$this->category = htmlspecialchars(strip_tags($this->category));
 			$this->status = htmlspecialchars(strip_tags($this->status));
 			$this->updated = htmlspecialchars(strip_tags($this->updated));
