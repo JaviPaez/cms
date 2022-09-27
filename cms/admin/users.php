@@ -46,7 +46,7 @@ include('inc/header.php');
 				<?php include "left_menus.php"; ?>
 				<div class="col-md-9">
 					<div class="panel panel-default">
-						<div class="panel-heading" style="background-color:  #095f59">
+						<div class="panel-heading">
 							<h3 class=" panel-title">Usuarios</h3>
 						</div>
 						<div class="panel-body">
