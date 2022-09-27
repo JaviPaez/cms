@@ -33,11 +33,12 @@ include('inc/header.php');
         <br>
         <div class="col-md-2">
           <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Manage
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Administrar
               <span class="caret"></span></button>
             <ul class="dropdown-menu">
               <li><a href="./add_post.php">Nueva Publicación</a></li>
               <li><a href="./add_categories.php">Nueva Categoría</a></li>
+              <li><a href="./add_users.php">Nuevo Usuario</a></li>
             </ul>
           </div>
         </div>
@@ -56,7 +57,7 @@ include('inc/header.php');
 
         <div class="col-md-9">
           <div class="panel panel-default">
-            <div class="panel-heading" style="background-color:  #095f59;">
+            <div class="panel-heading">
               <h3 class="panel-title">Visión general del sitio</h3>
             </div>
             <div class="panel-body">
