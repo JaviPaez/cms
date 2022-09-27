@@ -66,7 +66,7 @@ class User
 			$whereQuery ";
 
 		if (!empty($_POST["search"]["value"])) {
-			$sqlQuery .= ' first_name LIKE "%' . $_POST["search"]["value"] . '%" ';
+			$sqlQuery .= 'where first_name LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= ' OR last_name LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= ' OR email LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= ' OR type LIKE "%' . $_POST["search"]["value"] . '%" ';

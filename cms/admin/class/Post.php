@@ -28,7 +28,7 @@ class Post
 			$whereQuery";
 
 		if (!empty($_POST["search"]["value"])) {
-			$sqlQuery .= ' title LIKE "%' . $_POST["search"]["value"] . '%" ';
+			$sqlQuery .= 'where title LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= ' OR message LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= ' OR created LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= ' OR updated LIKE "%' . $_POST["search"]["value"] . '%" ';

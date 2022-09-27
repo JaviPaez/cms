@@ -19,7 +19,7 @@ class Category
 			 ";
 
 		if (!empty($_POST["search"]["value"])) {
-			$sqlQuery .= ' name LIKE "%' . $_POST["search"]["value"] . '%" ';
+			$sqlQuery .= 'where name LIKE "%' . $_POST["search"]["value"] . '%" ';
 		}
 
 		if (!empty($_POST["order"])) {
