@@ -35,7 +35,7 @@ include('inc/header.php');
 			?>
 				<div class="col-md-10 blogShort">
 					<h2><?php echo $post['title']; ?></h2>
-					<em><strong>Publicado el</strong>: <?php echo utf8_encode(ucfirst(strftime('%A %e de %B de %Y a las %H:%I', $fecha)));	?></em>
+					<em><strong>Publicado el</strong>: <?php echo utf8_encode(ucfirst(strftime('%A %e de %B de %Y a las %H:%M:%S', $fecha)));	?></em>
 					<em><strong>Categoría:</strong> <a href="#" target="_blank"><?php echo $post['category']; ?></a></em>
 					<br><br>
 					<article>
