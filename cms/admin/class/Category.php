@@ -22,8 +22,10 @@ class Category
 			$sqlQuery .= 'where name LIKE "%' . $_POST["search"]["value"] . '%" ';
 		}
 
+		// if (!empty($_POST["order"])) {
+		// 	$sqlQuery .= 'ORDER BY ' . $_POST['order']['0']['column'] . ' ' . $_POST['order']['0']['dir'] . ' ';
 		if (!empty($_POST["order"])) {
-			$sqlQuery .= 'ORDER BY ' . $_POST['order']['0']['column'] . ' ' . $_POST['order']['0']['dir'] . ' ';
+			$sqlQuery .= 'ORDER BY name ';
 		} else {
 			$sqlQuery .= 'ORDER BY id DESC ';
 		}

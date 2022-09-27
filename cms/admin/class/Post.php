@@ -33,10 +33,12 @@ class Post
 			$sqlQuery .= ' OR created LIKE "%' . $_POST["search"]["value"] . '%" ';
 			$sqlQuery .= ' OR updated LIKE "%' . $_POST["search"]["value"] . '%" ';
 		}
+		// if (!empty($_POST["order"])) {
+		// 	$sqlQuery .= 'ORDER BY ' . $_POST['order']['0']['column'] . ' ' . $_POST['order']['0']['dir'] . ' ';
 		if (!empty($_POST["order"])) {
-			$sqlQuery .= 'ORDER BY ' . $_POST['order']['0']['column'] . ' ' . $_POST['order']['0']['dir'] . ' ';
+			$sqlQuery .= 'ORDER BY status DESC ';
 		} else {
-			$sqlQuery .= 'ORDER BY id DESC ';
+			$sqlQuery .= 'ORDER BY created DESC ';
 		}
 		if ($_POST["length"] != -1) {
 			$sqlQuery .= 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
