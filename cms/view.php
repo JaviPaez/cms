@@ -22,7 +22,7 @@ include('inc/header.php');
 			<div class="header">
 				<a href="#default" class="logo">Mi Blog!</a>
 				<div class="header-right">
-					<a href="index.php">Inicio</a>
+					<a href="default.php">Inicio</a>
 					<a href="#contact">Contacto</a>
 					<a href="#about">Acerca de</a>
 				</div>

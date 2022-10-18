@@ -13,7 +13,7 @@ $post = new Post($db);
 $category = new Category($db);
 
 if (!$user->loggedIn()) {
-	header("location: index.php");
+	header("location: default.php");
 }
 
 $user->id = (isset($_GET['id']) && $_GET['id']) ? $_GET['id'] : '0';

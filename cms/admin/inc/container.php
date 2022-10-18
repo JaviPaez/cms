@@ -14,7 +14,7 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="../index.php">Inicio</a></li>
+          <li class="active"><a href="../default.php">Inicio</a></li>
 
         </ul>
 
