@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php setlocale(LC_ALL, 'es'); ?>
+<?php setlocale(LC_ALL, 'es_ES'); ?>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
