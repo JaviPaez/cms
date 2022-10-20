@@ -10,11 +10,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!-- <a href="http://www.phpzag.com" class="navbar-brand">PHPZAG.COM</a> -->
+        <!--  <a href="https://datagestioncms.online/" class="navbar-brand">DATA GESTION CMS</a> -->
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <!-- <li class="active"><a href="http://www.phpzag.com">Inicio</a></li> -->
+          <li class="active"><a href=".\admin\default.php">Administrar</a></li>
         </ul>
 
       </div>
