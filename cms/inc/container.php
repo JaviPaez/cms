@@ -13,7 +13,7 @@
         <!--  <a href="https://datagestioncms.online/" class="navbar-brand">DATA GESTION CMS</a> -->
       </div>
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href=".\admin\default.php">Administrar</a></li>
         </ul>
 
